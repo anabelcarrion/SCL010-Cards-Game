@@ -1,0 +1,190 @@
+[debug] [2019-10-30T20:04:26.765Z] ----------------------------------------------------------------------
+[debug] [2019-10-30T20:04:26.768Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\anabe\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-10-30T20:04:26.768Z] CLI Version:   7.6.2
+[debug] [2019-10-30T20:04:26.768Z] Platform:      win32
+[debug] [2019-10-30T20:04:26.768Z] Node Version:  v12.4.0
+[debug] [2019-10-30T20:04:26.770Z] Time:          Wed Oct 30 2019 17:04:26 GMT-0300 (GMT-03:00)
+[debug] [2019-10-30T20:04:26.770Z] ----------------------------------------------------------------------
+[debug] [2019-10-30T20:04:26.770Z] 
+[debug] [2019-10-30T20:04:26.783Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-10-30T20:04:26.784Z] > authorizing via signed-in user
+[debug] [2019-10-30T20:04:26.784Z] [iam] checking project slc010-cards-game for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-10-30T20:04:26.787Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/slc010-cards-game:testIamPermissions  
+
+[debug] [2019-10-30T20:04:27.776Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-30T20:04:27.779Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/slc010-cards-game  
+ 
+[debug] [2019-10-30T20:04:28.175Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'slc010-cards-game'...
+[info] 
+[info] i  deploying firestore, functions, hosting
+[debug] [2019-10-30T20:04:28.190Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received type undefined
+    at validateString (internal/validators.js:107:11)
+    at Object.join (path.js:372:7)
+    at Config.path (C:\Users\anabe\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:149:39)
+    at getChildEnvironment (C:\Users\anabe\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:50:49)
+    at runTargetCommands (C:\Users\anabe\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:71:14)
+    at C:\Users\anabe\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:122:24
+    at processTicksAndRejections (internal/process/task_queues.js:89:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2019-10-30T20:09:23.357Z] ----------------------------------------------------------------------
+[debug] [2019-10-30T20:09:23.360Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\anabe\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-10-30T20:09:23.361Z] CLI Version:   7.6.2
+[debug] [2019-10-30T20:09:23.361Z] Platform:      win32
+[debug] [2019-10-30T20:09:23.361Z] Node Version:  v12.4.0
+[debug] [2019-10-30T20:09:23.362Z] Time:          Wed Oct 30 2019 17:09:23 GMT-0300 (GMT-03:00)
+[debug] [2019-10-30T20:09:23.362Z] ----------------------------------------------------------------------
+[debug] [2019-10-30T20:09:23.363Z] 
+[debug] [2019-10-30T20:09:23.376Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-10-30T20:09:23.377Z] > authorizing via signed-in user
+[debug] [2019-10-30T20:09:23.377Z] [iam] checking project slc010-cards-game for permissions ["firebase.projects.get"]
+[debug] [2019-10-30T20:09:23.380Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/slc010-cards-game:testIamPermissions  
+
+[debug] [2019-10-30T20:09:24.546Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-30T20:09:24.554Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/slc010-cards-game  
+ 
+[debug] [2019-10-30T20:09:25.927Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\anabe\Desktop\javascript\SCLO010-Cards-Game'...
+[info] 
+[debug] [2019-10-30T20:09:25.941Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/slc010-cards-game/webApps/-/config  
+ 
+[debug] [2019-10-30T20:09:25.950Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received type undefined
+    at validateString (internal/validators.js:107:11)
+    at Object.join (path.js:372:7)
+    at new FunctionsEmulator (C:\Users\anabe\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:44:34)
+    at Object.<anonymous> (C:\Users\anabe\AppData\Roaming\npm\node_modules\firebase-tools\lib\serve\functions.js:39:71)
+    at Generator.next (<anonymous>)
+    at C:\Users\anabe\AppData\Roaming\npm\node_modules\firebase-tools\lib\serve\functions.js:7:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\anabe\AppData\Roaming\npm\node_modules\firebase-tools\lib\serve\functions.js:3:12)
+    at Object.start (C:\Users\anabe\AppData\Roaming\npm\node_modules\firebase-tools\lib\serve\functions.js:16:16)
+    at C:\Users\anabe\AppData\Roaming\npm\node_modules\firebase-tools\lib\serve\index.js:15:23
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2019-10-30T20:10:47.416Z] ----------------------------------------------------------------------
+[debug] [2019-10-30T20:10:47.419Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\anabe\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-10-30T20:10:47.419Z] CLI Version:   7.6.2
+[debug] [2019-10-30T20:10:47.419Z] Platform:      win32
+[debug] [2019-10-30T20:10:47.419Z] Node Version:  v12.4.0
+[debug] [2019-10-30T20:10:47.421Z] Time:          Wed Oct 30 2019 17:10:47 GMT-0300 (GMT-03:00)
+[debug] [2019-10-30T20:10:47.421Z] ----------------------------------------------------------------------
+[debug] [2019-10-30T20:10:47.421Z] 
+[debug] [2019-10-30T20:10:47.434Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-10-30T20:10:47.435Z] > authorizing via signed-in user
+[debug] [2019-10-30T20:10:47.436Z] [iam] checking project slc010-cards-game for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-10-30T20:10:47.439Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/slc010-cards-game:testIamPermissions  
+
+[debug] [2019-10-30T20:10:48.468Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-30T20:10:48.476Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/slc010-cards-game  
+ 
+[debug] [2019-10-30T20:10:49.780Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'slc010-cards-game'...
+[info] 
+[info] i  deploying firestore, functions, hosting
+[debug] [2019-10-30T20:10:49.806Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received type undefined
+    at validateString (internal/validators.js:107:11)
+    at Object.join (path.js:372:7)
+    at Config.path (C:\Users\anabe\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:149:39)
+    at getChildEnvironment (C:\Users\anabe\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:50:49)
+    at runTargetCommands (C:\Users\anabe\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:71:14)
+    at C:\Users\anabe\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:122:24
+    at processTicksAndRejections (internal/process/task_queues.js:89:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2019-10-30T20:11:35.927Z] ----------------------------------------------------------------------
+[debug] [2019-10-30T20:11:35.930Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\anabe\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-10-30T20:11:35.930Z] CLI Version:   7.6.2
+[debug] [2019-10-30T20:11:35.930Z] Platform:      win32
+[debug] [2019-10-30T20:11:35.931Z] Node Version:  v12.4.0
+[debug] [2019-10-30T20:11:35.932Z] Time:          Wed Oct 30 2019 17:11:35 GMT-0300 (GMT-03:00)
+[debug] [2019-10-30T20:11:35.932Z] ----------------------------------------------------------------------
+[debug] [2019-10-30T20:11:35.932Z] 
+[debug] [2019-10-30T20:11:35.944Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-10-30T20:11:35.945Z] > authorizing via signed-in user
+[debug] [2019-10-30T20:11:35.946Z] [iam] checking project slc010-cards-game for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-10-30T20:11:35.948Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/slc010-cards-game:testIamPermissions  
+
+[debug] [2019-10-30T20:11:36.989Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-30T20:11:36.999Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/slc010-cards-game  
+ 
+[debug] [2019-10-30T20:11:38.276Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'slc010-cards-game'...
+[info] 
+[info] i  deploying firestore, functions, hosting
+[debug] [2019-10-30T20:11:38.296Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received type undefined
+    at validateString (internal/validators.js:107:11)
+    at Object.join (path.js:372:7)
+    at Config.path (C:\Users\anabe\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:149:39)
+    at getChildEnvironment (C:\Users\anabe\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:50:49)
+    at runTargetCommands (C:\Users\anabe\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:71:14)
+    at C:\Users\anabe\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:122:24
+    at processTicksAndRejections (internal/process/task_queues.js:89:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2019-10-30T20:12:27.072Z] ----------------------------------------------------------------------
+[debug] [2019-10-30T20:12:27.075Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\anabe\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-10-30T20:12:27.075Z] CLI Version:   7.6.2
+[debug] [2019-10-30T20:12:27.075Z] Platform:      win32
+[debug] [2019-10-30T20:12:27.075Z] Node Version:  v12.4.0
+[debug] [2019-10-30T20:12:27.077Z] Time:          Wed Oct 30 2019 17:12:27 GMT-0300 (GMT-03:00)
+[debug] [2019-10-30T20:12:27.077Z] ----------------------------------------------------------------------
+[debug] [2019-10-30T20:12:27.077Z] 
+[debug] [2019-10-30T20:12:27.090Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-10-30T20:12:27.091Z] > authorizing via signed-in user
+[debug] [2019-10-30T20:12:27.092Z] [iam] checking project slc010-cards-game for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-10-30T20:12:27.095Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/slc010-cards-game:testIamPermissions  
+
+[debug] [2019-10-30T20:12:28.110Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-30T20:12:28.118Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/slc010-cards-game  
+ 
+[debug] [2019-10-30T20:12:28.544Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'slc010-cards-game'...
+[info] 
+[info] i  deploying firestore, functions, hosting
+[debug] [2019-10-30T20:12:28.562Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received type undefined
+    at validateString (internal/validators.js:107:11)
+    at Object.join (path.js:372:7)
+    at Config.path (C:\Users\anabe\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:149:39)
+    at getChildEnvironment (C:\Users\anabe\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:50:49)
+    at runTargetCommands (C:\Users\anabe\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:71:14)
+    at C:\Users\anabe\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:122:24
+    at processTicksAndRejections (internal/process/task_queues.js:89:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2019-10-30T20:16:15.723Z] ----------------------------------------------------------------------
+[debug] [2019-10-30T20:16:15.726Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\anabe\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-10-30T20:16:15.726Z] CLI Version:   7.6.2
+[debug] [2019-10-30T20:16:15.726Z] Platform:      win32
+[debug] [2019-10-30T20:16:15.726Z] Node Version:  v12.4.0
+[debug] [2019-10-30T20:16:15.727Z] Time:          Wed Oct 30 2019 17:16:15 GMT-0300 (GMT-03:00)
+[debug] [2019-10-30T20:16:15.727Z] ----------------------------------------------------------------------
+[debug] [2019-10-30T20:16:15.727Z] 
+[debug] [2019-10-30T20:16:15.742Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-10-30T20:16:15.744Z] > authorizing via signed-in user
+[debug] [2019-10-30T20:16:15.744Z] [iam] checking project slc010-cards-game for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-10-30T20:16:15.747Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/slc010-cards-game:testIamPermissions  
+
+[debug] [2019-10-30T20:16:16.927Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-30T20:16:16.938Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/slc010-cards-game  
+ 
+[debug] [2019-10-30T20:16:18.341Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'slc010-cards-game'...
+[info] 
+[info] i  deploying firestore, functions, hosting
+[debug] [2019-10-30T20:16:18.357Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received type undefined
+    at validateString (internal/validators.js:107:11)
+    at Object.join (path.js:372:7)
+    at Config.path (C:\Users\anabe\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:149:39)
+    at getChildEnvironment (C:\Users\anabe\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:50:49)
+    at runTargetCommands (C:\Users\anabe\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:71:14)
+    at C:\Users\anabe\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:122:24
+    at processTicksAndRejections (internal/process/task_queues.js:89:5)
+[error] 
+[error] Error: An unexpected error has occurred.

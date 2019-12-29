@@ -1,0 +1,19 @@
+header {
+  height: 85px;
+  border-bottom: 3px solid  #311320;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 20px;
+}
+
+.title {
+  font-size: 30px;
+  color:#fff;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+

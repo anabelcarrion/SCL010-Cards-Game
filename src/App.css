@@ -1,0 +1,7 @@
+body {
+  background-color: #000000eb;
+}
+
+div:focus {
+  outline: none !important;
+}

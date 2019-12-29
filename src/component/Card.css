@@ -1,0 +1,58 @@
+.card {
+  width: 125px;
+  height: 125px;
+}
+
+.coverPage {
+  width: 125px;
+  height: 125px;
+  background-image: linear-gradient(#6e123d,#311320, #6e123d);
+  border: solid 4px #311320;
+  border-radius: 20px;
+  display: flex;
+  font-size: 70px;
+  justify-content: center;
+  align-items: center;
+  color:#faf0f4;
+
+}
+
+.content {
+  width: 125px;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #faf0f4;
+  border: solid 4px #27131c;
+  border-radius: 20px;
+  color:#27131c;
+}
+
+.ReactFlipCard {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .coverPage {
+    width: 70px;
+    height: 70px;
+    font-size: 40px;  
+  }
+  
+  .content {
+    width: 70px;
+    height: 70px;
+  }
+
+  .fa-5x{
+    font-size:40px !important;
+  }
+  
+}
